@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image'
 import cat from '@/data/images/sillycat.gif'
 import { LogoCircle } from '@/components'
