@@ -1,2 +1,5 @@
 export { default as ProjectCard } from './ProjectCard'
 export { default as LogoCircle } from './LogoCircle'
+export { default as Header } from './Header'
+export { default as Layout } from './Layout'
+export { default as SectionContainer } from './SectionContainer'

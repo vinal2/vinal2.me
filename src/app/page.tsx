@@ -1,10 +1,10 @@
 import Image from 'next/image'
-import ProjectCard from '@/components/ProjectCard'
-import { LogoCircle } from '@/components'
+import { LogoCircle, ProjectCard, Header } from '@/components'
+import Head from 'next/head'
 
 export default function Home() {
   return (
-    <div>
+    <div className='flex flex-col justify-between'>
       <LogoCircle 
       />
     </div>

@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import cat from '@/data/sillycat.gif'
+import cat from '@/data/images/sillycat.gif'
 import {
     Card,
     CardContent,
@@ -9,36 +9,35 @@ import {
     CardTitle,
   } from "@/components/ui/card"
 import { cn } from "@/lib/utils"
-import ProjectCard from '@/components/ProjectCard'
+import projects from '@/data/projects'
+import { ProjectCard, Layout } from '@/components'
+import { Fragment } from 'react'
 
 export default function Page() {
     return (
-        <div className="bg-background divide-y divide-accent-foreground grid">
-            <div className="space-y-2 pb-8 pt-6 md:space-y-5 flex justify-center flex-col ">
-                <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-foreground sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-                    Projects
-                </h1>
-                <p className="text-muted-foreground">
-                    Stuff Ive personally developed or contributed to!
-                </p>
-            </div>
-            <div className="py-12 flex justify-center">
-                <div className="-m-4 flex flex-wrap">
-                   <ProjectCard
-                        title = "thing"
-                        description='t'
-                        imgSrc='t'
-                        href='t'
-                    />
-                    <ProjectCard
-                        title = "thing"
-                        description='t'
-                        imgSrc='t'
-                        href='t'
-                    />
+            <div className="pt-8 bg-background divide-y divide-accent-foreground">
+                <div className="pb-8 space-y-5 flex justify-center flex-col ">
+                    <h1 className="text-6xl font-extrabold leading-9 tracking-tight text-foreground">
+                        Personal Projects
+                    </h1>
                 </div>
+                <div className="py-12 flex justify-center">
+                    <div className="-m-4 flex flex-wrap">
+                        {projects.map((project) => (
+                            <ProjectCard
+                                title = { project.title }
+                                description = { project.description }
+                                imgSrc = { project.imgSrc }
+                                href = { project.href}
+                                tags = { project.tags }
+                                key = { project.title }
+                            />
+                        ))}
+                        
+                    </div>
+                </div>
+                
             </div>
-            
-        </div>
+        
     )
 }

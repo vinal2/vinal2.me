@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import cat from '@/data/sillycat.gif'
+import cat from '@/data/images/sillycat.gif'
 import { LogoCircle } from '@/components'
   
 
@@ -18,9 +18,14 @@ import { LogoCircle } from '@/components'
 
 export default function Page() {
     return (
-    
-            <LogoCircle
-            />
+      <div className='pt-8 divide-y divide-accent-foreground'>
+        <div className='pb-8 text-6xl font-extrabold leading-9 tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-primary to-destructive'>
+           About Me 
+        </div>
+        <div className='py-12'>
+          silly
+        </div>
+      </div>
         
     )
 }

@@ -1,8 +1,7 @@
 'use client'
-import cat from '@/data/sillycat.gif'
-import chakram from '@/data/chakram.png'
 import Image from 'next/image'
 import { useState } from 'react'
+import cat from '@/data/sillycat.gif'
 
 const LogoCircle = () => {
     const [visible, setVisibility] = useState(false);
@@ -13,11 +12,13 @@ const LogoCircle = () => {
     }
 
     return (
-        <div className="relative z-0">
-            <div onMouseEnter={() => setVisibility(true)} onMouseLeave={() => setVisibility(false)} className='transition-all absolute overflow-hidden rounded-full hover:scale-105 z-10 hover:rotate-70'>
+        <div className="relative z-0 flex flex-row justify-center pt-[108px] overflow-hidden aspect-square">
+            <div onMouseEnter={() => setVisibility(true)} 
+                onMouseLeave={() => setVisibility(false)} 
+                className='transition-all absolute overflow-hidden rounded-full hover:scale-105 z-10 hover:rotate-70'>
                 <a href='/about'>
                     <Image
-                        src={cat}
+                        src= { cat }
                         alt='gif'
                         width='400'
                         height='640'
@@ -26,7 +27,7 @@ const LogoCircle = () => {
             </div>
             <div className={(visible) ? 'scale-105 absolute z-1' : 'absolute z-1 invisible'}>
                     <Image
-                        src={chakram}
+                        src= '/static/images/chakram.png'
                         alt='png'
                         width='420'
                         height='720'

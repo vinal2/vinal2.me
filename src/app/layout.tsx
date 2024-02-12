@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from "@/components/ThemeProvider"
+import { Header, SectionContainer } from '@/components'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,11 +26,12 @@ export default function RootLayout({
           attribute="class"
           defaultTheme="dark"
         >
-            <section className="mx-auto max-w-3xl px-4 pt-20 sm:px-6 xl:max-w-[50rem] xl:px-8">
-              <div className="flex h-screen flex-col justify-between font-sans">
-                <main className="mb-auto">{children}</main>
-              </div>
-          </section>
+          <SectionContainer>
+            <div className="flex h-full flex-col justify-between font-sans">
+              <Header /> 
+              <main>{children}</main>
+            </div>
+          </SectionContainer>
         </ThemeProvider>
       </body>
     </html>
