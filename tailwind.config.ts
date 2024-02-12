@@ -22,10 +22,14 @@ const config = {
         'med': '799px',
         'lrg': '1220px',
       },
+      fontSize: {
+        '12xl': '176px'
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
+        lavender: "hsl(var(--lavender))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {

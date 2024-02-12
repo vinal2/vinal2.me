@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 export default function Home() {
   return (
-    <div className='flex flex-col justify-between'>
+    <div className='flex flex-col justify-between pt-12'>
       <LogoCircle 
       />
     </div>

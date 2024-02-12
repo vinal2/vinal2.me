@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import { useState } from 'react'
 import cat from '@/data/sillycat.gif'
+import logo from '@/data/temp logo 2.png'
 
 const LogoCircle = () => {
     const [visible, setVisibility] = useState(false);
@@ -15,10 +16,10 @@ const LogoCircle = () => {
         <div className="relative z-0 flex flex-row justify-center pt-[108px] overflow-hidden aspect-square">
             <div onMouseEnter={() => setVisibility(true)} 
                 onMouseLeave={() => setVisibility(false)} 
-                className='transition-all absolute overflow-hidden rounded-full hover:scale-105 z-10 hover:rotate-70'>
-                <a href='/about'>
+                className='transition-all absolute overflow-hidden rounded-full hover:scale-105 z-10 hover:rotate-70 border border-border bg-primary'>
+                <a href='/projects'>
                     <Image
-                        src= { cat }
+                        src= { logo }
                         alt='gif'
                         width='400'
                         height='640'

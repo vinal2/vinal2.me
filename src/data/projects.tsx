@@ -1,7 +1,7 @@
 const projects = [
     {
         title: "Abystar",
-        description: "A WIP Next.js web application to aid calculating and theorycrafting for Genshin Impact character builds.",
+        description: "A WIP Open Source Next.js web application to aid calculating and theorycrafting for Genshin Impact character builds.",
         imgSrc: '/static/images/abystar.png',
         href: 'https://github.com/jktrn/abystar',
         tags: ['Web Development', 'React', 'Next.js', 'Selenium', 'BeautifulSoup']
@@ -9,7 +9,7 @@ const projects = [
     {
         title: "vinal2.me",
         description: "My personal website powered by Next.js, hosted on Vercel. This website was built with TailwindCss and shadcn.",
-        imgSrc: '/static/images/sillycat.gif',
+        imgSrc: '/static/images/temp logo.png',
         href: 'https://github.com/vinal2/vinal2.me',
         tags: ['Web Development', 'React', 'Next.js']
     },

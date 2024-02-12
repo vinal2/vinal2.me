@@ -33,8 +33,8 @@ const Header = () => {
             <div className="w-full mx-auto flex h-[60px] items-center justify-between">
                 <div>
                     <div className="flex items-center justify-between rounded-full overflow-hidden">
-                        <a href='/about'>
-                            <Image src='/static/images/sillycat.gif' alt="cat gif" width="48" height="48" />
+                        <a href='/'>
+                            <Image src='/static/images/temp logo.png' alt="cat gif" width="48" height="48" />
                         </a>
                     </div>
                 </div>
