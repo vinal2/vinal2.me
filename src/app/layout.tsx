@@ -36,7 +36,4 @@ export default function RootLayout({
     </html>
   </>
   )
-}            /*<SectionContainer> <div className="flex h-full flex-col justify-between font-sans">
-              <Header /> 
-              <Footer />
-            </div>          </SectionContainer> */
+} 
