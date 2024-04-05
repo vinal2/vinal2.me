@@ -1,5 +1,12 @@
 const projects = [
     {
+        title: "Passerine Motion",
+        description: "A WIP freelance animation portfolio website designed in Figma and built on React. Includes a Twitter scraper to automatically fetch and update images to display.",
+        imgSrc: '/static/images/logo.jpg',
+        href: 'https://passerine-portfolio.vercel.app/',
+        tags: ['Web Development', 'React', 'Next.js', 'Selenium', 'Figma']
+    },
+    {
         title: "Abystar",
         description: "A WIP Open Source Next.js web application to aid calculating and theorycrafting for Genshin Impact character builds.",
         imgSrc: '/static/images/abystar.png',
@@ -8,7 +15,7 @@ const projects = [
     },
     {
         title: "vinal2.me",
-        description: "My personal website powered by Next.js, hosted on Vercel. This website was built with TailwindCss and shadcn.",
+        description: "My personal website powered by Next.js, hosted on Vercel. This website was built with TailwindCss, shadcn and animated with gsap.",
         imgSrc: '/static/images/temp logo.png',
         href: 'https://github.com/vinal2/vinal2.me',
         tags: ['Web Development', 'React', 'Next.js']

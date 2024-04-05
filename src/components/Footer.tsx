@@ -6,7 +6,7 @@ const Footer = () => {
     const pathName = usePathname()
 
     return (
-        <footer>
+        <footer className='pt-6'>
             <div className='flex flex-col mb-6'>
                 <div className='flex flex-row justify-center space-x-4'>
                     <a href='https://github.com/vinal2'>

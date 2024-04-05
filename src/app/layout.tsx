@@ -26,16 +26,17 @@ export default function RootLayout({
           attribute="class"
           defaultTheme="dark"
         >
-          <SectionContainer>
-            <div className="flex h-full flex-col justify-between font-sans">
-              <Header /> 
+          
+
               <main>{children}</main>
-              <Footer />
-            </div>
-          </SectionContainer>
+
+
         </ThemeProvider>
       </body>
     </html>
   </>
   )
-}
+}            /*<SectionContainer> <div className="flex h-full flex-col justify-between font-sans">
+              <Header /> 
+              <Footer />
+            </div>          </SectionContainer> */
