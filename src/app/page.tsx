@@ -91,7 +91,7 @@ export default function Page() {
                 trigger: '.project',
                 scrub: 1,
             }, 
-            y: (i, target) => -(height - 498 - 12) * target.dataset.speed * 1.4,
+            y: (i, target) => -(height) * target.dataset.speed * 1.5,
             ease: 'none'
         });
         
