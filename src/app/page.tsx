@@ -67,6 +67,8 @@ export default function Page() {
             onEnterBack: batch => gsap.to(batch, {opacity: 1, y: 0, stagger: 0.15, overwrite: true, ease: "power3.out"}),
             onLeaveBack: batch => gsap.set(batch, {opacity: 0, y: 100, overwrite: true, ease: "power3.out"}),
         });
+        
+        /* ScrollTrigger.addEventListener("refreshInit", () => gsap.set(".card", { y: 0 })); */
 
         gsap.set(".icon", {y: 50, opacity: 0});
 
@@ -79,7 +81,7 @@ export default function Page() {
             onLeaveBack: batch => gsap.set(batch, {opacity: 0, y: 50, overwrite: true, ease: "power3.out"}),
         });
 
-        ScrollTrigger.addEventListener("refreshInit", () => gsap.set(".card", { y: 0 }));
+        
         
         gsap.to(".pillarLight", {
                 scrollTrigger: {
