@@ -29,12 +29,14 @@ const inter = Inter({ subsets: ['latin'] })
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 export default function Page() {
+    const [pillarHeight, setHeight] = useState(0)
     let height = 0;
 
     useEffect(() => {
         // @ts-ignore
         // eslint-disable-next-line react-hooks/exhaustive-deps
         height = document.querySelector('.project-wrapper')?.scrollHeight;
+        setHeight(height)
         console.log(height)
     }, []);
 
@@ -91,7 +93,8 @@ export default function Page() {
                 trigger: '.project',
                 scrub: 1,
             }, 
-            y: (i, target) => -(height) * target.dataset.speed * 1.5,
+            /* y: (i, target) => -(height) * target.dataset.speed * 1.5, */
+            y: (i, target) => (2214/1.15 - 486 - 24) * target.dataset.speed,
             ease: 'none'
         });
         
