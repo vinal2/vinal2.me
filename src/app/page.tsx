@@ -35,6 +35,7 @@ export default function Page() {
         // @ts-ignore
         // eslint-disable-next-line react-hooks/exhaustive-deps
         height = document.querySelector('.project-wrapper')?.scrollHeight;
+        console.log(height)
     }, []);
 
     
